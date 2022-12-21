@@ -1,0 +1,182 @@
+/* root */
+
+/* Variables */
+
+html {
+    --main-background-color: #333; 
+    --main-text-color: rgb(204, 204, 204);
+
+}
+
+
+/* Universal */
+
+main {
+    position: relative;
+    top: 5vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Chivo Mono', monospace; 
+    
+}
+
+
+/* navbar*/
+
+header {
+    position: fixed;
+    height: 5vh;
+    border-bottom: solid 1px black;
+    z-index: 1;
+}
+
+header nav {
+    background-color: var(--main-background-color);
+    position: relative;
+    width: 100vw;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.home,
+.about-me, 
+.portfolio, 
+.contactme {
+    color: var(--main-text-color);
+    background: 
+      linear-gradient(90deg, #f05252, #f2711c, #f5a623, #f7d12e, #a3e048, #56d9cd, #1fb8e5, #1a75bb, #5151e5, #a54ee5, #f05252) 
+      var(--_p,100%)/200% no-repeat;
+    -webkit-background-clip: text;
+            background-clip: text;
+    transition: .5s;
+    
+}
+
+.about-me:hover, 
+.home:hover, 
+.portfolio:hover,
+.contactme:hover {
+    color: transparent;
+    --_p: 0%;
+}
+
+.menu   {
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 1vw;
+}
+
+.menu a {
+    color: var(--main-text-color);
+    margin: 0.5rem;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.logo, 
+.github,
+.linkedin {
+    height: 3rem;
+    transition: 0.5s;
+}
+
+.logo:hover,
+.github:hover, 
+.linkedin:hover {
+   height: 3.5rem;
+}
+
+.logo {
+    margin-left: 1rem;
+}
+
+
+/* hero */
+
+
+.hero {
+    height: 95vh;
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.hero h1 {
+    width: 60%;
+}
+
+  .rainbow-text {
+    color: var(--main-text-color);
+    background: 
+      linear-gradient(90deg, #f05252, #f2711c, #f5a623, #f7d12e, #a3e048, #56d9cd, #1fb8e5, #1a75bb, #5151e5, #a54ee5, #f05252) 
+      var(--_p,100%)/200% no-repeat;
+    -webkit-background-clip: text;
+            background-clip: text;
+    transition: 1s;
+    font-size: 4rem;
+  }
+  
+  .rainbow-text:hover {
+    color: transparent;
+    --_p: 0%;
+  }
+  
+  
+
+
+
+
+/* About Me */
+
+
+ .about-me-img {
+    background-image: url('/resources/portrait-bw.jpg');
+    height: 400px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s;
+    width: 400px;
+    justify-self: right;
+    
+}
+
+.about-me-img:hover {
+    background-image: url('/resources/portrait.jpg');
+    
+}
+
+
+.about-me-section {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 15% auto;
+    grid-gap: 2rem;
+    background-color: #4b789b;
+    padding: 5%;
+}
+
+.about-me-text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-me-subheading {
+    font-size: 2.5rem;
+}
