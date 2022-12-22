@@ -94,3 +94,27 @@ header nav {
 .logo {
     margin-left: 1rem;
 }
+
+
+
+/* Footer */ 
+
+
+footer {
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+    height: 5vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+footer p {
+    margin-right: 5vw;
+}

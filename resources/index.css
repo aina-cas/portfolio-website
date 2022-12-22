@@ -179,4 +179,37 @@ header nav {
 
 .about-me-subheading {
     font-size: 2.5rem;
+    color: var(--main-text-color);
+}
+
+.about-me-text {
+    color: var(--main-text-color);
+}
+
+.about-me-text-section a {
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+
+/* Footer */ 
+
+
+footer {
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+    height: 5vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+footer p {
+    margin-right: 5vw;
 }
