@@ -89,7 +89,7 @@ header nav {
     transition: 0.5s;
 }
 
-.logo:hover,
+
 .github:hover, 
 .linkedin:hover {
    height: 3.5rem;
@@ -191,6 +191,16 @@ header nav {
     color: var(--main-text-color);
 }
 
+
+/* Portfolio preview section */ 
+
+.portfolio-container {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    margin: 15% auto;
+}
 
 /* Footer */ 
 

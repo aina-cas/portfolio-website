@@ -85,7 +85,7 @@ header nav {
     transition: 0.5s;
 }
 
-.logo:hover,
+
 .github:hover, 
 .linkedin:hover {
    height: 3.5rem;
