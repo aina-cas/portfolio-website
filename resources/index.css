@@ -3,7 +3,7 @@
 /* Variables */
 
 html {
-    --main-background-color: #333; 
+    --main-background-color: rgb(32, 32, 32); 
     --main-text-color: rgb(204, 204, 204);
 
 }
@@ -28,8 +28,8 @@ main {
 
 header {
     position: fixed;
-    height: 5vh;
-    border-bottom: solid 1px black;
+    height: 4rem;
+    border-bottom: solid 2px rgb(40, 40, 40);
     z-index: 1;
 }
 
@@ -97,6 +97,7 @@ header nav {
 
 .logo {
     margin-left: 1rem;
+    filter: drop-shadow(0 0 5px rgb(147, 104, 23));
 }
 
 
@@ -110,12 +111,17 @@ header nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100vh;
+}
+
+div.hero {
+    width: 100vw;
 }
 
 
-
-.hero h1 {
+ h1 {
     width: 60%;
+    z-index: 100000;
 }
 
   .rainbow-text {
@@ -135,7 +141,14 @@ header nav {
   }
   
   
+/* Balls animation */
 
+.ball {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.7;
+    z-index: 99999;
+}
 
 
 
